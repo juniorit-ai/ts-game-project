@@ -1,0 +1,11 @@
+{
+  "name": "juniorit-gamecraft",
+  "version": "1.0.0",
+  "description": "A game package containing Game and Scene classes",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JuniorIT.AI",
+  "dependencies": {}
+}
