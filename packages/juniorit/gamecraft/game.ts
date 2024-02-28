@@ -28,7 +28,7 @@ export default class Game {
         return this._instance;
     }
 
-    public init(width: number, height: number, caption: string = "JuniorIT.AI Game Craft") {
+    public init(name: string, width: number, height: number) {
         this.app.screen.width = width
         this.app.screen.height = height
 
@@ -37,9 +37,9 @@ export default class Game {
             document.body.style.margin = '0 auto';
             document.body.style.backgroundColor = 'black';
             document.body.appendChild(this.app.view);
-            document.title = caption;
+            document.title = name;
         });
-        
+
         // Set ticker to 60 FPS
         this.app.ticker.maxFPS = 60;
     }
