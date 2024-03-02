@@ -1,4 +1,12 @@
-### 1. "Hello, World!" in TypeScript
+### 1. JavaScript vs. TypeScript vs. Node.js: What's the Difference?
+
+**JavaScript (JS):** The basic language of the web. It makes web pages interactive (buttons, animations, etc.).
+
+**TypeScript (TS):** Like JavaScript, but with superpowers! It adds "types" (like numbers, text) to your code, catching errors early and making it easier to write big projects.
+
+**Node.js:**  Lets you use JavaScript outside of the web browser. Think of it as the engine that allows you to build websites (the back-end part),  programs, and other cool stuff that don't live in a browser. 
+
+### 2. "Hello, World!" in TypeScript
 TypeScript enhances JavaScript by adding types and some other features. The "Hello, World!" program in TypeScript is written to introduce the basic syntax, which is similar to JavaScript, but with additional type-checking.
 
 **Basic Structure of a TypeScript Program**
@@ -10,7 +18,7 @@ TypeScript enhances JavaScript by adding types and some other features. The "Hel
 console.log("Hello, World!";); // Display the message in the console
 ```
 
-### 2. Linux Shell Command Basics
+### 3. Linux Shell Command Basics
 A fundamental understanding of Linux shell commands is crucial for navigating directories, managing files, and executing typescript programs in a Linux environment.
 
 **Navigating Directories**
@@ -57,7 +65,7 @@ make deploy          # Deploys your game to your personal website for public acc
 make submit          # Submits your code for review; It is the same as the command `juniorit submit`
 ```
 
-### 3. Compile and Execute TypeScript Program
+### 4. Compile and Execute TypeScript Program
 TypeScript is not executed directly by JavaScript engines; it undergoes a process called transpilation. The TypeScript code must be transpiled into JavaScript using the TypeScript compiler (tsc) before it can be run.
 
 **Transpilation**
@@ -82,7 +90,7 @@ node app.js                      # Execute the specified JavaScript file.
 ts-node hello.ts                 # Directly executes 'hello.ts' using ts-node
 ```
 
-### 4. Output and Logs in TypeScript
+### 5. Output and Logs in TypeScript
 TypeScript uses console methods to output information, useful for debugging or providing runtime information. as it is in JavaScript.   
 
 **Console Output**
@@ -99,7 +107,7 @@ console.warn("Warning message.");
 console.info("Informational message.");
 ```
 
-### 5. Comments in TypeScript
+### 6. Comments in TypeScript
 Comments in TypeScript are used to explain the code and are identical to JavaScript comments. They help make the code more readable and can also disable code during the development phase.
 
 1. **Single-line Comments**: `//` - Used for short comments on a single line.
