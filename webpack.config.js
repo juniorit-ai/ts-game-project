@@ -13,6 +13,13 @@ module.exports = (env) => {
     const config = {
         entry: "./src/index.ts",
 
+        devServer: {
+            port: 9000,
+            allowedHosts: [
+                'all'
+            ],
+        },
+
         resolve: {
             extensions: [".ts", ".tsx", ".js", ".json"],
             // alias: {
