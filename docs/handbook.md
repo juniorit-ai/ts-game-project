@@ -6,7 +6,25 @@
 
 **Node.js:**  Lets you use JavaScript outside of the web browser. Think of it as the engine that allows you to build websites (the back-end part),  programs, and other cool stuff that don't live in a browser. 
 
-### 2. "Hello, World!" in TypeScript
+
+### 2. "Hello, World!" in JavaScript
+JavaScript is a versatile and widely-used programming language that is primarily used for building dynamic and interactive web applications.It is a dynamically-typed language, allowing for flexibility. The absence of types in JavaScript code makes it concise and easy to write, but developers need to be mindful of potential type-related issues during runtime.
+
+**Basic Structure of a JavaScript Program**
+1. **File Extension**: `.js` - JavaScript files have a `.js` extension, distinguishing them from TypeScript files.
+2. `console.log("Hello, World!");` - Outputs the text "Hello, World!" to the console.
+
+**Example Code**
+```javascript
+console.log("Hello, World!"); // Display the message in the console
+```
+You can run the JavaScript program using Node.js by executing the following command in the terminal or command prompt:
+
+```bash
+node helloworld.js
+```
+
+### 3. "Hello, World!" in TypeScript
 TypeScript enhances JavaScript by adding types and some other features. The "Hello, World!" program in TypeScript is written to introduce the basic syntax, which is similar to JavaScript, but with additional type-checking.
 
 **Basic Structure of a TypeScript Program**
@@ -15,10 +33,11 @@ TypeScript enhances JavaScript by adding types and some other features. The "Hel
 
 **Example Code**
 ```typescript
-console.log("Hello, World!";); // Display the message in the console
+let greeting: string = "Hello, world!";
+console.log(greeting); // Display the message in the console
 ```
 
-### 3. Linux Shell Command Basics
+### 4. Linux Shell Command Basics
 A fundamental understanding of Linux shell commands is crucial for navigating directories, managing files, and executing typescript programs in a Linux environment.
 
 **Navigating Directories**
@@ -34,8 +53,14 @@ A fundamental understanding of Linux shell commands is crucial for navigating di
 4. `mv` - Moves or renames files or directories.
 5. `rm` - Removes files or directories.
 
-**Project Build**
-1. `make` - Builds and manages the project from source code.
+**Key Node.js Commands and Scripts**
+1. `npm install`     - Install project dependencies listed in package.json
+2. `npm run clean`   - Remove generated or temporary files for a clean project state
+3. `npm run dev`     - Transpile TypeScript, start development server, and enable live reloading.
+4. `npm run build`   - Build the project for production with TypeScript transpilation and optimizations
+5. `npm run deploy`  - Deploy the application after building; Ensure 'npm run build' is executed first
+6. `npm run submit`  - Submit the code for review or perform specific tasks related to submission
+
 
 **JuniorIT's Special Shell Commands**
 
@@ -57,15 +82,20 @@ rm file.txt          # Delete 'file.txt'
 juniorit get         # Checks out your starter project for the assignment
 jcode test.ts        # Opens the file test.ts in the Code Editor from the terminal
 ts-node hello.ts     # Directly executes 'hello.ts' using ts-node
+tsc script.ts        # Transpile the TypeScript file to JavaScript.
+node script.js       # Execute the JavaScript file with Node.js.
+tsw-node script.ts   # Recommended for achieving faster execution without type checking.
 
-make                 # Builds your starter project
-make clean           # Removes any cached build files
-make run             # Tests your starter project
-make deploy          # Deploys your game to your personal website for public access
-make submit          # Submits your code for review; It is the same as the command `juniorit submit`
+npm install          # Install project dependencies listed in package.json
+npm run clean        # Remove generated or temporary files for a clean project state
+npm run dev          # Transpile TypeScript, start development server, and enable live reloading
+npm run build        # Build the project for production by transpiling TypeScript into JavaScript and applying optimizations
+npm run deploy       # Deploy the application after building; Ensure 'npm run build' is executed first
+npm run submit       # Submit the code for review and perform specific tasks related to submission
+
 ```
 
-### 4. Compile and Execute TypeScript Program
+### 5. Compile and Execute TypeScript Program
 TypeScript is not executed directly by JavaScript engines; it undergoes a process called transpilation. The TypeScript code must be transpiled into JavaScript using the TypeScript compiler (tsc) before it can be run.
 
 **Transpilation**
@@ -74,10 +104,13 @@ TypeScript is not executed directly by JavaScript engines; it undergoes a proces
 3. `tsc --outFile output.js script.ts` - Transpiles `script.ts` into a specified JavaScript output file `output.js`.
 
 **Execution**
-1. `node output.js` - Executes the transpiled JavaScript file `output.js` if Node.js is installed.
+- `node output.js` - Executes the transpiled JavaScript file `output.js` if Node.js is installed.
 
 **Direct Execution with ts-node**
-1. `ts-node` - It is a TypeScript execution environment for Node.js. It allows you to run TypeScript files (.ts) directly without the need for an intermediate compilation step. This is achieved by registering the TypeScript compiler (tsc) on-the-fly and compiling and executing the TypeScript code in-memory.
+- `ts-node` - It is a TypeScript execution environment for Node.js. It allows you to run TypeScript files (.ts) directly without the need for an intermediate compilation step. This is achieved by registering the TypeScript compiler (tsc) on-the-fly and compiling and executing the TypeScript code in-memory.
+
+**Special JuniorIt command to execute TypeScript Code**
+- `tsw-node` - The tsw-node command is a specialized alias, just like `jcode` and is specifically designed for `ts-node --swc`. It provides quicker compilation without performing type checking. **_This feature is particularly beneficial in container environments with limited resources, emphasizing cost-effectiveness. It is employed to achieve improved performance._**
 
 **Code Example**
 ```bash
@@ -88,9 +121,11 @@ tsc --outFile app.js script.ts   # Transpile with a specified output filename.
 node app.js                      # Execute the specified JavaScript file.
 
 ts-node hello.ts                 # Directly executes 'hello.ts' using ts-node
+
+tsw-node script.ts               # # Recommended for achieving faster execution without type checking.
 ```
 
-### 5. Output and Logs in TypeScript
+### 6. Output and Logs in TypeScript
 TypeScript uses console methods to output information, useful for debugging or providing runtime information. as it is in JavaScript.   
 
 **Console Output**
@@ -107,7 +142,7 @@ console.warn("Warning message.");
 console.info("Informational message.");
 ```
 
-### 6. Comments in TypeScript
+### 7. Comments in TypeScript
 Comments in TypeScript are used to explain the code and are identical to JavaScript comments. They help make the code more readable and can also disable code during the development phase.
 
 1. **Single-line Comments**: `//` - Used for short comments on a single line.
