@@ -1,6 +1,6 @@
 /*+
   This is a JuniorIT's special comment block, and the AI will ignore these contents.
 
-  Develop a program that asks the user to enter a number n, and then counts down from n to 0 every one second, 
-  printing each number to the console.
+ Write a TypeScript program for Node.js that counts down from a specified number n to 0, printing each number to the console every second. 
+ Use the require('readline-sync') library for synchronously reading user input in the Node.js environment.
 +*/
